@@ -44,7 +44,7 @@ export class GamePage extends React.Component {
                 />
                 <ItemImage />
                 <ItemDescription />
-                {/*  <PriceChoice /> */}
+                 <PriceChoice />
             </div>
 
         )
