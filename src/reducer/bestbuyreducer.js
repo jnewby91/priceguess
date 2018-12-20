@@ -9,9 +9,10 @@ const initialState={
             image: 'https://img.bbystatic.com/BestBuy_US/images/products/6043/6043422_sa.jpg',
             regularPrice: '.99',
             url: 'https://google.com', 
-            shortDescription: "Windows 104GB dedicated graphicsTechnical details: 6th Gen Intel&#174; Core&#8482; i7 processor; 17.3\" display; 16GB memory; 1TB hard drive; 256GB solid state driveSpecial features: Backlit keyboardNote: DVD/CD drive not included"
+            shortDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
         }]
-    }
+    }, 
+    
 }; 
 /* 
     currentProduct.products
