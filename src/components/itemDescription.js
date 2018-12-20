@@ -10,7 +10,7 @@ import {connect} from 'react-redux';
     return (
       <div className="itemDescription">
         <h4>Description</h4>
-          {/* <p>{props.itemDescription}</p> */}
+          {props.data.currentProduct.products[0].shortDescription}
       </div>
     );
    }

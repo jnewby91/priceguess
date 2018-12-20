@@ -43,7 +43,7 @@ export class GamePage extends React.Component {
                     timer={10}
                 />
                 <ItemImage />
-                {/* <ItemDescription /> */}
+                <ItemDescription />
                 {/*  <PriceChoice /> */}
             </div>
 

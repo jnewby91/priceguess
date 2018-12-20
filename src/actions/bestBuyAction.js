@@ -29,7 +29,7 @@ export const fetchItemInfo = () => dispatch => {
 
     dispatch(fetchItemInfoRequest());
     //Split up API call properly in fetch
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.bestbuy.com/v1/products(categoryPath.name=Headphones*)?apiKey=A3fUqjrVIUbZWiJcDlQcel89&sort=name.asc&show=name,image,regularPrice,url&pageSize=5&page=5&format=json`, {
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.bestbuy.com/v1/products(categoryPath.name=Laptops*)?apiKey=A3fUqjrVIUbZWiJcDlQcel89&sort=image.asc&show=image,name,regularPrice,url,shortDescription&pageSize=3&format=json`, {
         method: 'GET', 
         mode: "cors",
         headers: {
