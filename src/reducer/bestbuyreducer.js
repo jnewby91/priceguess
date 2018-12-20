@@ -3,17 +3,14 @@ import * as actions from '../actions/bestBuyAction'
 const initialState={
     loading: false, 
     error: null, 
-    currentProduct: [{
+    currentProduct: {
         products: [{
             name: 'name',
-            image: 'https://img.bbystatic.com/BestBuy_US/images/products/6043/6043422_sa.jpg', 
+            image: 'https://img.bbystatic.com/BestBuy_US/images/products/6043/6043422_sa.jpg',
             regularPrice: '.99',
             url: 'https://google.com'
         }]
     }
-    ] 
-    
-
 }; 
 /* 
     currentProduct.products

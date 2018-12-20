@@ -6,10 +6,10 @@ import {connect} from 'react-redux';
 
  function ItemImage(props) {
    console.log(props);
-  if(props.data.currentProduct[0].products.length) {
+  if(props.data.currentProduct.products.length) {
     return ( <div className="itemImage">
-    <h4>{props.data.currentProduct[0].products[0].name}</h4>
-    <img className="image" src={props.productPicture} alt="itemImage" />
+    <h4>{props.data.currentProduct.products[0].name}</h4>
+    <img className="image" src={props.data.currentProduct.products[0].image} alt="itemImage" />
   </div>
     )
   }
@@ -47,3 +47,5 @@ const mapStatetoProps = (state) => {
 }
 
 export default connect(mapStatetoProps)(ItemImage);
+
+//

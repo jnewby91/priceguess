@@ -5,17 +5,39 @@ import './itemDescription.css';
 import {connect} from 'react-redux'; 
 
  function ItemDescription(props) {
-  return (
-    <div className="itemDescription">
-      <h4>Description</h4>
-        <p>{props.itemDescription}</p>
-    </div>
-  );
+   console.log(props)
+   if(props.data.currentProduct.products.length) {
+    return (
+      <div className="itemDescription">
+        <h4>Description</h4>
+          {/* <p>{props.itemDescription}</p> */}
+      </div>
+    );
+   }
+   else {
+     return <p>No Data Found</p>
+   }
+ 
 }
 
 //how to map the array down below with different numbers
-const mapStatetoProps = (state) => ({
-    itemDescription: state.currentProduct[state.currentProduct.length - 1].itemDescription
-})
+const mapStatetoProps = (state) => {
+    let data = {
+      currentProduct: {
+        products: [
+
+        ]
+      }
+    }
+
+    if(state.bestBuyCall) {
+      data = state.bestBuyCall 
+    }
+
+    return ({
+      data
+    })
+
+}
 
 export default connect(mapStatetoProps)(ItemDescription); 
