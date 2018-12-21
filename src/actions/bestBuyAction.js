@@ -19,17 +19,26 @@ export const fetchItemInfoError = error => ({
 })
 
 export const fetchItemInfo = () => dispatch => {
-    const categories = [
-    'Digital Cameras','Health ,Fitness & Beauty','Headphones','Home Audio','Home Automation & Security']
+    const categories = ['abcat0501000',
+        'abcat0401000',
+        'pcmcat209400050001',
+        'pcmcat242800050021',
+        'abcat0204000', 
+        'pcmcat241600050001',
+        'pcmcat254000050002',
+        'abcat0912000',
+        'abcat0101000'
+        
+    ];
      
-     const categoryName = categories[(Math.floor(Math.random()*categories.length)+3)]; 
+     const categoryPathIds = categories[(Math.floor(Math.random()*categories.length + 1))]; 
      
      const page= (Math.floor(Math.random()*10) + 3);
      
 
     dispatch(fetchItemInfoRequest());
     //Split up API call properly in fetch
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.bestbuy.com/v1/products((categoryPath.id=abcat0501000))?apiKey=A3fUqjrVIUbZWiJcDlQcel89&sort=image.asc&show=image,name,regularPrice,url,shortDescription&pageSize=4&page=${page}&format=json`, {
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.bestbuy.com/v1/products((categoryPath.id=${categoryPathIds}))?apiKey=A3fUqjrVIUbZWiJcDlQcel89&sort=image.asc&show=image,name,regularPrice,url,shortDescription&pageSize=4&page=${page}&format=json`, {
         method: 'GET', 
         mode: "cors",
         headers: {
