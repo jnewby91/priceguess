@@ -23,10 +23,12 @@ export const changeItem = (item) => ({
 
 
 export const CHOSEN_ANSWER='CHOSEN_ANSWER'; 
-export const chosenAnswer = (guessPrice, correctPrice) => ({
+export const chosenAnswer = (guessPrice, correctPrice, productURL) => ({
     type: CHOSEN_ANSWER,
     value: guessPrice,
-    correctPrice
+    correctPrice, 
+    productURL
+
 
 })
 

@@ -43,8 +43,8 @@ export const priceGuessReducer = (state = initialState, action) => {
             playerGuesses: [...state.playerGuesses, {
                 questionNumber: state.questions, 
                 chosenAnswer: action.value,
-                correct: (action.value === action.correctPrice)
-
+                correct: (action.value === action.correctPrice),
+                productURL: action.productURL
             }]
         })
 
