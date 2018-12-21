@@ -11,12 +11,7 @@ const initialState = {
     correctGuessCount: 0,
     incorrectGuessCount: 0,
     currentPriceOptions: ['4.00', '5.00', '3.00', '2.00'],
-    playerGuesses: [{
-        questionNumber: 1,
-        actualPrice: '1.11',
-        guessedPrice: '2.22',
-        correct: false
-    }],
+    playerGuesses: [],
     currentProduct: [{
         itemName: '',
         productPicture: 'url',
@@ -41,6 +36,20 @@ export const priceGuessReducer = (state = initialState, action) => {
         })
 
     }
+
+    else if (action.type === actions.CHOSEN_ANSWER) {
+
+        return Object.assign({}, state, {
+            playerGuesses: [...state.playerGuesses, {
+                questionNumber: state.questions, 
+                chosenAnswer: action.value,
+                correct: (action.value === action.correctPrice)
+
+            }]
+        })
+
+    }
+
     /* Need to add points to the score if user got the correct answer and then update the store*/
 
     return state;

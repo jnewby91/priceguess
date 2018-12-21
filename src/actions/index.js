@@ -22,9 +22,12 @@ export const changeItem = (item) => ({
  */
 
 
-export const PLAYERS_CHOICE='PLAYERS_CHOICE'; 
-export const playersChoice = (guessPrice) => ({
-    type: PLAYERS_CHOICE,     
+export const CHOSEN_ANSWER='CHOSEN_ANSWER'; 
+export const chosenAnswer = (guessPrice, correctPrice) => ({
+    type: CHOSEN_ANSWER,
+    value: guessPrice,
+    correctPrice
+
 })
 
 // const NEW_BUTTONS='NEW_BUTTONS'; 
