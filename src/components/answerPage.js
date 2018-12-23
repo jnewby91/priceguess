@@ -2,6 +2,7 @@ import React from 'react';
 import './answerPage.css'; 
 import {Link} from 'react-router-dom'; 
 import ItemImage from './itemImage';
+import { connect } from 'react-redux';
 
 
 
@@ -9,12 +10,10 @@ export class AnswerPage extends React.Component{
     render() {
     return(
         <div className="answerSection">
-            <ItemImage 
-                itemName= 'Item Name'
-                image='https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_55-512.png'
-            />
+            <ItemImage />
             <p>Correct Price was:
                  <span className='correctAnswer'>
+                 {this.props.data.currentProduct.products[0].regularPrice}
                  </span>
             </p>
            <Link to='/gamepage'><button>Next Guess</button></Link>
@@ -23,4 +22,22 @@ export class AnswerPage extends React.Component{
     }
 }
 
-export default AnswerPage; 
+const mapStatetoProps = state => {
+    let data = {
+        currentProducts: {
+            products: [
+
+            ]
+        }
+    }
+
+    if(state.bestBuyCall) {
+        data = state.bestBuyCall
+    }
+
+    return ({
+        data
+    })
+}
+
+export default connect(mapStatetoProps) (AnswerPage); 
