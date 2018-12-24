@@ -3,20 +3,26 @@ import './answerPage.css';
 import {Link} from 'react-router-dom'; 
 import ItemImage from './itemImage';
 import { connect } from 'react-redux';
+import { addScore } from '../actions';
 
 
 
 export class AnswerPage extends React.Component{
-    render() {
+
+    // componentWillUnmount(){
+    // }
+    render() {  
+        console.log(this.props.data)
+        //Figure out a way to display if user got question correct or incorrect
     return(
         <div className="answerSection">
             <ItemImage />
             <p>Correct Price was:
                  <span className='correctAnswer'>
-                 {this.props.data.currentProduct.products[0].regularPrice}
+            {this.props.data.bestBuyCall.currentProduct.products[0].regularPrice}
                  </span>
             </p>
-           <Link to='/gamepage'><button>Next Guess</button></Link>
+           <Link to='/gamepage'><button onClick={()=> {this.props.dispatch(addScore(this.props.data.priceGuess.score + 100))}}>Next Guess </button></Link>
         </div>
     )
     }
@@ -32,7 +38,7 @@ const mapStatetoProps = state => {
     }
 
     if(state.bestBuyCall) {
-        data = state.bestBuyCall
+        data = state
     }
 
     return ({

@@ -23,9 +23,15 @@ function PriceChoice(props){
 
     //need to map over props for each button
     let choices= values.map((price, index) => (
-        <Link to='/answerpage'>
-        <button onClick={()=>props.dispatch(chosenAnswer(price, value, productURL))} key={index} className='priceChoice'>{price}</button>
-        </Link>))
+        <Link key={index} to='/answerpage'>
+        <button
+            key={index}  
+            onClick={()=>props.dispatch(chosenAnswer(price, value, productURL))}  
+            className='priceChoice'>{price}
+            </button>
+            </Link>
+       ))
+       
     
     return (
         <div className="scoreboard">

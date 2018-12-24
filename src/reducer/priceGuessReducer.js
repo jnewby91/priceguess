@@ -24,11 +24,18 @@ const initialState = {
 export const priceGuessReducer = (state = initialState, action) => {
 
     if (action.type === actions.ADD_SCORE) {
-        /* Need to update points to the score if user got the correct answer and then update the store*/
-
+        /* Need to update points to the score if user got the correct answer and then update the store
+         How comee the priceReducer is not being shown on AnswerPage. 
+        */
+       if(state.playerGuesses[state.playerGuesses.length -1].correct){
         return Object.assign({}, state, {
-            score: state.score + action.score
-        })
+            //if correct answer is true then add score
+            score: state.score + action.score    
+        }) 
+       }
+
+       return state; 
+       
     } else if (action.type === actions.CHANGE_QUESTION) {
 
         return Object.assign({}, state, {
