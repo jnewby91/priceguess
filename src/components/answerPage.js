@@ -3,7 +3,7 @@ import './answerPage.css';
 import {Link} from 'react-router-dom'; 
 import ItemImage from './itemImage';
 import { connect } from 'react-redux';
-import { addScore } from '../actions';
+import { addScore, changeQuestion } from '../actions';
 
 
 
@@ -22,7 +22,11 @@ export class AnswerPage extends React.Component{
             {this.props.data.bestBuyCall.currentProduct.products[0].regularPrice}
                  </span>
             </p>
-           <Link to='/gamepage'><button onClick={()=> {this.props.dispatch(addScore(this.props.data.priceGuess.score + 100))}}>Next Guess </button></Link>
+           <Link to='/gamepage'><button onClick={()=> {
+               this.props.dispatch(addScore(this.props.data.priceGuess.score + 100));
+               this.props.dispatch(changeQuestion());
+               
+               }}>Next Guess </button></Link>
         </div>
     )
     }
