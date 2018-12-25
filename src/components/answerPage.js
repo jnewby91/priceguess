@@ -14,6 +14,10 @@ export class AnswerPage extends React.Component{
     render() {  
         console.log(this.props.data)
         //Figure out a way to display if user got question correct or incorrect
+        let gamepage = '/gamepage'
+        if(this.props.data.priceGuess.playerGuesses.length === 1){
+            gamepage = '/feedback'
+        }
     return(
         <div className="answerSection">
             <ItemImage />
@@ -22,7 +26,7 @@ export class AnswerPage extends React.Component{
             {this.props.data.bestBuyCall.currentProduct.products[0].regularPrice}
                  </span>
             </p>
-           <Link to='/gamepage'><button onClick={()=> {
+           <Link to={gamepage}><button onClick={()=> {
                this.props.dispatch(addScore(this.props.data.priceGuess.score + 100));
                this.props.dispatch(changeQuestion());
                

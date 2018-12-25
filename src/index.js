@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import  GamePage from './components/gameboard';
 import AnswerPage from './components/answerPage';
 import Feedback from './components/feedback';
-import FeaturedItems from './featuredItems';
+import FeaturedItems from './components/featuredItems';
 
 ReactDOM.render(
 <Router>
