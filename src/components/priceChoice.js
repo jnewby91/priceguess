@@ -36,7 +36,7 @@ function PriceChoice(props){
        
     
     return (
-        <div className="scoreboard">
+        <div className="priceChoices">
             <h3>What's The Price?</h3>
                 {choices}
             {/* <Link to='/answerpage'><button type="submit">Make Guess</button></Link> */}

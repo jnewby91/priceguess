@@ -8,7 +8,7 @@ import {connect} from 'react-redux';
    console.log(props);
   if(props.data.currentProduct.products.length) {
     return ( <div className="itemImage">
-    <h4>{props.data.currentProduct.products[0].name}</h4>
+    <h3>{props.data.currentProduct.products[0].name}</h3>
     <img className="image" src={props.data.currentProduct.products[0].image} alt="itemImage" />
   </div>
     )

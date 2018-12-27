@@ -1,0 +1,16 @@
+.priceChoices{
+    
+}
+button.priceChoice {
+    font-family: Segoe UI;
+    font-size: 20px;
+    display: block;
+    color: white;
+    background-color: #0D3A54;
+    border: 2px solid black;
+    box-shadow: 3px 4px 2px #707073;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+    text-align: center;
+}

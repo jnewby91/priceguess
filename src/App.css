@@ -1,0 +1,43 @@
+nav{
+    background-color: #15390F;
+    color: white; 
+}
+
+h1{
+    color:#248615;
+    font: 34px 'Segoe UI Black';
+}
+
+
+p{
+    font-family: 'Segoe UI';
+    color: white;
+}
+
+#instructions{
+    font-family: 'Segoe UI Light';
+
+}
+a{
+    font-family: 'Segoe UI Light';
+    text-decoration: none;
+
+}
+
+.LandingPage h2{
+    font: 34px 'Segoe UI Black';
+
+}
+
+.landingParagraph{
+    font: 24px 'Segoe UI'; 
+    font-weight: bold;
+}
+
+.startGame{
+    font: 30px 'Segoe UI Black';
+    color: #15390F; 
+}
+
+
+

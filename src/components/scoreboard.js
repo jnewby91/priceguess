@@ -3,6 +3,7 @@ import React from 'react';
 import Countdown from 'react-countdown-now'; 
 import {chosenAnswer} from '../actions'
 import './scoreboard.css' ;
+import {Redirect} from 'react-router-dom';
 import {connect} from 'react-redux'; 
 
 
@@ -16,34 +17,79 @@ const renderer =({seconds, completed}) => {
     }
 };
 
- function Scoreboard(props){
-    //  let price = 0; 
-    //  let value = props.data.currentProduct.products[0].regularPrice;
-    //  let productURL= props.data.currentProduct.products[0].url; 
-    //  let name= props.data.currentProduct.products[0].name; 
-    //  let itemPrice= props.data.currentProduct.products[0].regularPrice; 
+ class  Scoreboard extends React.Component{
+     constructor(props){
+         super(props)
+         this.state = {
+             timerDone: false
+         }
+         
+     }
+
+     render(){
+        if(this.state.timerDone) {
+            return ( <Redirect to='/answerpage' />)
+
+        }
+
+
+     let price = 0; 
+     let value = this.props.data.bestBuyCall.currentProduct.products[0].regularPrice;
+     let productURL= this.props.data.bestBuyCall.currentProduct.products[0].url; 
+     let name= this.props.data.bestBuyCall.currentProduct.products[0].name; 
+     let itemPrice= this.props.data.bestBuyCall.currentProduct.products[0].regularPrice; 
 
     //  console.log(value, productURL,name,itemPrice)
     return (
         <div className="scoreboard">
             <h4 className="timer">
-                Timer: <Countdown date={Date.now() + 10000}
+                Timer: <Countdown date={Date.now() + 8000}
                 onComplete={()=> {
-                    // chosenAnswer(price)
-                    window.location = '/answerpage'
+                    this.props.dispatch(chosenAnswer(price, value, productURL, name, itemPrice))
+                    this.setState({timerDone: true});
                 }}
                 /> seconds      
             </h4>
-            <h4 className="score">Score: {props.score} points</h4>
-            <h4 className="question">questions: {props.questions} /10</h4>
+            <h4 className="score">Score: {this.props.data.priceGuess.score} points</h4>
+            <h4 className="question">questions: {this.props.data.priceGuess.questions} /10</h4>
         </div>
     )
+
+     }
+
+
+
 }  
 
-const mapStatetoProps = state => ({
-    score: state.priceGuess.score,
-    questions: state.priceGuess.questions
-})
+const mapStatetoProps = state => {
+    let data = {
+        bestBuyCall: {
+            currentProduct: {
+                products: [
+                    {
+                        regularPrice: null, 
+                        url: null , 
+                        name: null ,
+                        
+                    }
+        
+                ]
+              }
+            }
+
+        }
+     
+  
+      if(state.bestBuyCall) {
+        data = state
+      }
+  
+      return ({
+        data
+      })
+  
+  }
+
 
 export default connect(mapStatetoProps)(Scoreboard)
 

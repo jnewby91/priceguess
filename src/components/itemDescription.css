@@ -1,15 +1,7 @@
-*{
-    margin: 0;
-    padding: 0; 
-    font-family: Comic Sans MS; 
-  }
 
   
 .itemDescription {
-    float: right;
-    width: 40%;
-    margin: 90px 55px;
-    display: inline-block;
+    
 }
 
 .itemDescription h3{
@@ -17,6 +9,12 @@
 
 }
 
-p{
-    width: 50%;
+h3{
+    font-family: 'Segoe UI';
+    font-size: 0.9 em; 
+    font-weight: bold;
+}
+.itemDescription p{
+    color: black;
+    width: 100%;
 }

@@ -9,8 +9,8 @@ import {connect} from 'react-redux';
    if(props.data.currentProduct.products.length) {
     return (
       <div className="itemDescription">
-        <h4>Description</h4>
-          {props.data.currentProduct.products[0].shortDescription}
+        <h3>Description</h3>
+          <p>{props.data.currentProduct.products[0].shortDescription}</p>
       </div>
     );
    }

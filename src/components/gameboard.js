@@ -37,13 +37,19 @@ export class GamePage extends React.Component {
         */}
 
         return (
-            <div className="GamePage">
-                <Scoreboard
-                    timer={10}
-                />
-                <ItemImage />
-                <ItemDescription />
+            <div className="background">
+                <div className='scorePanel'>
+                <Scoreboard />
+                </div>
+                <div className='displayPanel'>
+                <div className='itemCard'>
+                    <ItemImage />
+                    <ItemDescription />
+                </div>
+                <div className='pricePanel'>
                  <PriceChoice />
+                 </div>
+                 </div>  
             </div>
 
         )
