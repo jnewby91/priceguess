@@ -24,7 +24,7 @@ let incorrect = 0;
             <p>You Guessed <span id="rightScore">{correct}</span> right.</p>
             <p>You Guessed <span id="wrongScore">{incorrect}</span> wrong.</p>
             <p>Score: <span id="score">{props.data.priceGuess.score}</span></p>
-            <Link to='/'><button type="submit">PLAY AGAIN !!!</button></Link>
+            <Link to='/'><button type="submit">PLAY AGAIN </button></Link>
             <Link to='/featureditems'><button type="submit">Review Items Shown</button></Link>
 
         </div>

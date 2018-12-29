@@ -1,18 +1,33 @@
 nav{
+    display: flex;
+    justify-content: space-between;
     background-color: #15390F;
     color: white; 
+    height: 30%;
+    width: 100%;
+
 }
 
-h1{
-    color:#248615;
-    font: 34px 'Segoe UI Black';
+h1 {
+    color: #248615;
+    font: 45px 'Segoe UI Black';
+    padding: 10px 0px 0px 35px;
 }
 
 
 p{
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI Light ';
     color: white;
 }
+
+.LandingPage {
+    width:70%;
+    margin: 0px auto;
+}
+
+.LandingPage p{
+    padding: 25px;
+    font-weight: lighter;}
 
 #instructions{
     font-family: 'Segoe UI Light';
@@ -39,5 +54,13 @@ a{
     color: #15390F; 
 }
 
+main{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto;
+}
 
-
+main p {
+    width: 70%;
+}

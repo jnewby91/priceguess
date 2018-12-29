@@ -20,17 +20,27 @@ export class AnswerPage extends React.Component{
         }
     return(
         <div className="answerSection">
+            <div className='answerPageBackground'>
+            <div className='itemCard'>
             <ItemImage />
             <p>Correct Price was:
                  <span className='correctAnswer'>
             {this.props.data.bestBuyCall.currentProduct.products[0].regularPrice}
                  </span>
             </p>
-           <Link to={gamepage}><button onClick={()=> {
-               this.props.dispatch(addScore(this.props.data.priceGuess.score + 100));
-               this.props.dispatch(changeQuestion());
-               
-               }}>Next Guess </button></Link>
+            </div>
+            <div className='theButton'>
+            <Link to={gamepage}>
+           
+                <button  onClick={()=> {
+                    this.props.dispatch(addScore(this.props.data.priceGuess.score + 100));
+                    this.props.dispatch(changeQuestion());
+                    
+                    }}><h3>Next Guess</h3> 
+                </button>
+            </Link>
+                </div>
+                </div>
         </div>
     )
     }

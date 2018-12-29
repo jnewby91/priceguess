@@ -39,7 +39,7 @@ const renderer =({seconds, completed}) => {
      let name= this.props.data.bestBuyCall.currentProduct.products[0].name; 
      let itemPrice= this.props.data.bestBuyCall.currentProduct.products[0].regularPrice; 
 
-    //  console.log(value, productURL,name,itemPrice)
+     console.log(value, productURL,name,itemPrice)
     return (
         <div className="scoreboard">
             <h4 className="timer">
@@ -51,7 +51,7 @@ const renderer =({seconds, completed}) => {
                 /> seconds      
             </h4>
             <h4 className="score">Score: {this.props.data.priceGuess.score} points</h4>
-            <h4 className="question">questions: {this.props.data.priceGuess.questions} /10</h4>
+            <h4 className="question">Questions: {this.props.data.priceGuess.questions} /10</h4>
         </div>
     )
 

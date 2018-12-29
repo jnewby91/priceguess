@@ -1,0 +1,30 @@
+.answerPageBackground {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.answerPageBackground p {
+    color: black; 
+}
+
+.answerPageBackground .itemCard {
+    margin: 0 auto;
+}
+
+ .itemCard,.answerPageBackground button{
+    text-align: center;
+}
+
+.answerPageBackground button{
+    border: none;
+    background: none;
+}
+
+.theButton{
+    margin: 0px auto;
+}
