@@ -1,0 +1,26 @@
+.featuredItems{
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center;
+    background-color: white; 
+    width: 70%; 
+    border-radius: 5px; 
+    margin: 60px auto; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+.featuredItems h2{
+    margin: 10px auto; 
+
+}
+
+.featuredItems h3{
+    margin-bottom: 30px ; 
+    
+}
+
+.featuredTable {
+    margin-left: auto;
+    margin-right: auto;
+}

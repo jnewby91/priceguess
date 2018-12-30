@@ -42,16 +42,21 @@ const renderer =({seconds, completed}) => {
      console.log(value, productURL,name,itemPrice)
     return (
         <div className="scoreboard">
-            <h4 className="timer">
-                Timer: <Countdown date={Date.now() + 8000}
+            <h4 className="timer"> 
+                Timer: <span className="numberEmphasis"> 
+                <Countdown date={Date.now() + 8000}
                 onComplete={()=> {
                     this.props.dispatch(chosenAnswer(price, value, productURL, name, itemPrice))
                     this.setState({timerDone: true});
                 }}
-                /> seconds      
+                /> seconds 
+            </span>    
             </h4>
-            <h4 className="score">Score: {this.props.data.priceGuess.score} points</h4>
-            <h4 className="question">Questions: {this.props.data.priceGuess.questions} /10</h4>
+            <h4 className="score">Score:<span className="numberEmphasis"> {this.props.data.priceGuess.score} points</span></h4>
+            <h4 className="question">Questions: 
+                <span className="numberEmphasis"> {this.props.data.priceGuess.questions} /10
+                </span>
+            </h4>
         </div>
     )
 

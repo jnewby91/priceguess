@@ -1,8 +1,17 @@
 .scoreboard{
     color: white; 
     font-family: 'Segoe UI';
+    display:flex; 
+    justify-content: space-evenly;
+
 }
 
 h4{
  font-family: 'Segoe UI';
+}
+
+.numberEmphasis{
+    color: #15863F;
+    font-family: 'Segoe UI Black'; 
+    font-size: 20px; 
 }
