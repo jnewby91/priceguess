@@ -29,3 +29,10 @@
 .pricePanel{
     display: inline-block; 
 }
+
+.loadingSpinner h1 {
+    color: black; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+}

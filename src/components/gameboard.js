@@ -5,6 +5,7 @@ import ItemImage from './itemImage';
 import ItemDescription from './itemDescription';
 import Scoreboard from './scoreboard';
 import PriceChoice from './priceChoice';
+import Spinner from 'react-spinkit'; 
 import { fetchItemInfo } from '../actions/bestBuyAction';
 import { fetchItemInfoRequest, fetchItemInfoSuccess } from '../actions/bestBuyAction';
 
@@ -20,7 +21,10 @@ export class GamePage extends React.Component {
 
     render() {
         if (this.props.loading === true) {
-            return <h1>LOADING</h1>
+            return <div className='loadingSpinner'>                <h1>LOADING
+                        <Spinner name="ball-pulse-sync" />
+                        </h1>
+                    </div>
         }
 
 
