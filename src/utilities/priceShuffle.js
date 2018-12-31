@@ -6,7 +6,7 @@ function shuffleArray(array){
     }
   }
   
-  
+  // I'll work on this later
   
   function buttonValues(price){
     console.log(Math.round(price));
