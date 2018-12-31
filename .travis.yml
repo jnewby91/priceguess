@@ -1,0 +1,12 @@
+language: node_js
+node_js: node
+cache: 
+directories:
+- node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: NUgV0NIAJFDcIfw03MVjH6P5FgbDmnCtpeffsrhtvnpp4rEgC2dgjXKJQ/AXsTzCNeJEkBo/rwcW9m+RNEKU4wYyjXtcWKEHZ3X5/dn0RZg5+9IeU5vPX8ti2r9UNlENTk8aRIiaRW/9t1+CWk5XoRfYcFumAh6FBrGEElEvUCtwZRgvh7/Sher8IKujdhK61KAWaZNqimwaxgKEJMgcYp4jILHhbM6DsPYuiQHl0uvSyzOw5GkR/+8uFDIwJbwMRTZ5BsBr8bqDIDZXlhL/1ZlujtILfSa4YxUo8vhtmyk2HS4BZJp2Ab8/iFd5exnwFx63eC2TyH4oyrIH4II1XqcKntTDioZYnS0sNAD70n+KWtE6iEM6nfcH2i9pVZubeblW8riSaiEeLrnq99PUvrO6nJLjC5eUwUnlyQ86HXeYEWYP0IL2a8O9b7j5HxanwBkZrNTip+uOjM789yiZf8kW8WalIixPfVuGPqpb4rfghR9MNwOJQ2XUeSzieTM5TrNxBUfG7bwZ8Jjvgc0xqER8hHuLIBdK44vQife9DoVKet0msQJQlgswYvC2t7tijpPCl+v5FuhrAgt1NeYTTkqKYvVThdJnpC4s7NbWpcrdtomUFjy4BdDOhXPcTJds6G+YCjeHU+HzuYX1wIxlshi+qrSyBe0nEtFQktRB+d0=
+  app: priceguess
+  on:
+    repo: jnewby91/priceguess
