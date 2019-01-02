@@ -28,3 +28,9 @@
 .theButton{
     margin: 0px auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .itemCard{
+        width: 80%;
+    }
+}

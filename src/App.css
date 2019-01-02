@@ -64,3 +64,17 @@ main{
 main p {
     width: 70%;
 }
+
+@media only screen and (max-width: 600px){
+    .LandingPage{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav{
+        display: block; 
+        text-align: center;
+    }
+
+
+}
