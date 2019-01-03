@@ -3,7 +3,7 @@ PriceGuess is a spin-off of the popular gameshow, the Price is Right. You're pre
 
 ## Screenshots
 Landing Page
-![Landing Page](screenshots/LandingPage.PNG)
+![Landing Page](priceguess\src\screenshots\ScoreItem.PNG)
 
 <!-- GameBoard Page
 ![GameBoard Page](screenshots/GameBoardPage.PNG)
