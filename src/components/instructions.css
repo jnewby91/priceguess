@@ -21,7 +21,6 @@
     background-image: url('../screenshots/GameBoardPage.PNG'); 
     background-size: contain;
     background-repeat: no-repeat; 
-    /* border: 1px solid black; */
     height: 300px;
 }
 
@@ -31,7 +30,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 30%;
-    /* border: 1px solid black; */
     height: 70px;
 }
 
@@ -41,7 +39,6 @@
     background-size: contain;
     background-repeat: no-repeat; 
     width: 30%; 
-    /* border: 1px solid black; */
     height: 70px;  
 }
 
@@ -51,7 +48,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 30%; 
-    /* border: 1px solid black; */
     height: 70px;  
 }
 .instructionsBackground p {

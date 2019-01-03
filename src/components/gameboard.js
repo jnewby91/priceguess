@@ -28,18 +28,6 @@ export class GamePage extends React.Component {
         }
 
 
-
-        {/* 
-            1. If loading or error state of the bestBuyCall is true, 
-            then render don't render the ItemDescription or PriceChoice
-
-            Possibly a spinner should go right here while loading
-
-            2.After bestBuyCall.state.actualProducts has informationn in the state,
-            the props can be mapped to Item Description adn Price Component 
-        
-        */}
-
         return (
             <div className="background">
                 <div className='scorePanel'>
@@ -61,17 +49,13 @@ export class GamePage extends React.Component {
 }
 
 
-//Finish setting up dispatch for the class
+
 
 const mapStatetoProps = (state) => {
     return ({
         loading: state.bestBuyCall.loading
 
     })
-    // ({
-    //     itemDescription: state.bestBuyCall.currentProduct[state.bestBuyCall.currentProduct.length - 1].itemDescription
-    // })
-
 }
 
 export default connect(mapStatetoProps)(GamePage); 

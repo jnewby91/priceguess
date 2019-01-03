@@ -19,7 +19,6 @@ import {connect} from 'react-redux';
  
 }
 
-//how to map the array down below with different numbers
 const mapStatetoProps = (state) => {
     let data = {
       currentProduct: {

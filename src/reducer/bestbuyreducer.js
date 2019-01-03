@@ -14,9 +14,6 @@ const initialState={
     }, 
     
 }; 
-/* 
-    currentProduct.products
-*/
 
 export const bestBuyCallReducer = (state=initialState, action) => {
     if(action.type === actions.FETCH_ITEM_INFO_REQUEST) {

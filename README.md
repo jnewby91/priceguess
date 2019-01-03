@@ -14,21 +14,6 @@ Answer Page
 FeedBack Page
 ![FeedBack Page](screenshots/FeedBackPage.PNG)
 
-
-
-
-<!-- Sign In Page
-![Sign-In Page](Screenshots/Sign-InPage.PNG)
-
-Sign Up Page
-![Sign-In Page](Screenshots/Sign-UpPage.PNG)
-
-Create Note Page
-![Create A Note Page](Screenshots/CreateNotePage.PNG)
-
-View Note Page
-![ViewNote Page](Screenshots/ViewNotePage.PNG) -->
-
 ## Live App
 [PriceGuess]
 (https://priceguess.herokuapp.com/) 

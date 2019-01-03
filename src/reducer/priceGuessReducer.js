@@ -24,12 +24,10 @@ const initialState = {
 export const priceGuessReducer = (state = initialState, action) => {
 
     if (action.type === actions.ADD_SCORE) {
-        /* Need to update points to the score if user got the correct answer and then update the store
-         How comee the priceReducer is not being shown on AnswerPage. 
-        */
+    
+        
        if(state.playerGuesses[state.playerGuesses.length -1].correct){
         return Object.assign({}, state, {
-            //if correct answer is true then add score
             score: state.score + action.score    
         }) 
        }
@@ -59,20 +57,7 @@ export const priceGuessReducer = (state = initialState, action) => {
 
     }
 
-    /* Need to add points to the score if user got the correct answer and then update the store*/
-
     return state;
 
 }
 
-
-//Ask Alex do I need to create another key value pair for products viewed 
-//or just use actual Product History
-
-// const defaultState = {
-//     score: 0,
-//     question: 1,
-//     currentPriceOptions: [],
-//     playerGuesses: [{questionNumber: 1, actualPrice: '1.11', guessedPrice: '2.22', correct: false, }],
-//     currentProduct: [{itemName:'',productPicture:'url',itemDescription:''}],
-// }

@@ -5,7 +5,6 @@ import {FETCH_ITEM_INFO_SUCCESS,fetchItemInfoSuccess, fetchItemInfoRequest,   } 
 
 
 describe('bestBuyCallReducer', () => {
-    //Set up dummy data
     const name = 'Some Product'; 
     const image = 'testImage.png';
     const regularPrice = '1.00'; 

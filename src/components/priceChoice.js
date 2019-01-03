@@ -13,13 +13,12 @@ function PriceChoice(props){
 
 
 
-    // shuffle props into an array  before mapping over the buttons 
     let values = priceShuffle(value);
     let productURL= props.data.currentProduct.products[0].url; 
     let name= props.data.currentProduct.products[0].name
     let itemPrice= props.data.currentProduct.products[0].regularPrice
 
-    //need to map over props for each button
+
     let choices= values.map((price, index) => (
         <Link key={index} to='/answerpage'>
         <button
@@ -35,8 +34,6 @@ function PriceChoice(props){
         <div className="priceChoices">
             <h3>What's The Price?</h3>
                 {choices}
-            {/* <Link to='/answerpage'><button type="submit">Make Guess</button></Link> */}
-            {/* <button onClick={()=> props.dispatch(changeQuestion())}>Dispatch</button> */}
         </div>
     )
     }

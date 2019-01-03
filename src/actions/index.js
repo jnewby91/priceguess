@@ -17,11 +17,6 @@ export const changeItem = (item) => ({
     itemDescription: item.itemDescription
 })
 
-/**
- * Not completely sure if i have the right structure when returning the json file on line 53. Need Help.
- */
-
-
 export const CHOSEN_ANSWER='CHOSEN_ANSWER'; 
 export const chosenAnswer = (guessPrice, correctPrice, productURL, itemName, itemPrice) => ({
     type: CHOSEN_ANSWER,
@@ -30,13 +25,4 @@ export const chosenAnswer = (guessPrice, correctPrice, productURL, itemName, ite
     productURL, 
     itemName,
     itemPrice 
-    
-    
-
-
 })
-
-// const NEW_BUTTONS='NEW_BUTTONS'; 
-// export const newButtons = () => ({
-//     type: 
-// })

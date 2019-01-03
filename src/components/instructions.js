@@ -8,7 +8,6 @@ export default function Instructions(props){
         <div className='instructionsPage'>
             <nav>
             <Link to='/'><h1>Price Guess?</h1></Link>
-            {/* <p>Tag Line Text</p> */}
             <Link id="instructions" to='/instructions'><p>How To Play </p> </Link>
             </nav>
             <main>  
