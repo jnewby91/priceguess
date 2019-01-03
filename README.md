@@ -2,8 +2,8 @@
 PriceGuess is a spin-off of the popular gameshow, the Price is Right. You're presented with 4 choices of prices for a BestBuy product. Choose the correct answer before the timer ends.
 
 ## Screenshots
-Home Page
-![Home Page]
+Landing Page
+![Landing Page](screenshots/LandingPage.PNG)
 
 <!-- Sign In Page
 ![Sign-In Page](Screenshots/Sign-InPage.PNG)
