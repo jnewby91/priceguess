@@ -1,7 +1,9 @@
+
 .instructionsBackground{
     background-color: white; 
     padding: 10px; 
     color: #0D3A54;
+    border-radius: 10px;
     
 }
 
@@ -9,25 +11,47 @@
     text-align: center;
 }
 
-#objective{
-    margin :0px auto; 
+#objective {
+    margin: 50px auto;
+    text-align: center;
 }
 
 .gameboardImage{
-    width: 100%; 
-    border: 1px solid black;
+    margin: 50px; 
+    background-image: url('../screenshots/GameBoardPage.PNG'); 
+    background-size: contain;
+    background-repeat: no-repeat; 
+    /* border: 1px solid black; */
     height: 300px;
 }
 
-.scoreImage{
+.scoreImage {
+    margin: 20px auto;
+    background-image: url(/static/media/ScoreItem.5fe04d58.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    /* border: 1px solid black; */
+    height: 70px;
+}
+
+.timerImage{
+    margin: 20px auto;
+    background-image: url('../screenshots/TimerItem.PNG');
+    background-size: contain;
+    background-repeat: no-repeat; 
     width: 30%; 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 70px;  
 }
 
 .questionImage{
+    margin: 20px auto;
+    background-image: url('../screenshots/QuestionItem.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 30%; 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 70px;  
 }
 .instructionsBackground p {

@@ -10,7 +10,6 @@ function PriceChoice(props){
 
         let value = props.data.currentProduct.products[0].regularPrice; 
 
-        console.log('the value is:', value); 
 
 
 
@@ -19,9 +18,6 @@ function PriceChoice(props){
     let productURL= props.data.currentProduct.products[0].url; 
     let name= props.data.currentProduct.products[0].name
     let itemPrice= props.data.currentProduct.products[0].regularPrice
-    console.log('the url:', productURL )
-
-    console.log('the values:', values )
 
     //need to map over props for each button
     let choices= values.map((price, index) => (

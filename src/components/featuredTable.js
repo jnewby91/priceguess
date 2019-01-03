@@ -5,7 +5,6 @@ import {connect} from 'react-redux';
  
 function FeaturedTable(props){
 
-    console.log(props)
     const featuredItems = props.data.priceGuess.playerGuesses.map((item, index)=> {
         return(<>
         <tr>

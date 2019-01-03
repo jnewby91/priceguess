@@ -21,6 +21,7 @@ export default function Instructions(props){
                     <div className='scoreImage'></div>
                     <p>Select the correct price and your score will go up a 100 points
                     </p>
+                    <div className='timerImage'></div>
                     <p>If your run out of time or guess incorrect no points will be added to your score
                     </p>
                     <div className='questionImage'></div>

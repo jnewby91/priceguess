@@ -5,7 +5,6 @@ import './itemDescription.css';
 import {connect} from 'react-redux'; 
 
  function ItemDescription(props) {
-   console.log(props)
    if(props.data.currentProduct.products.length) {
     return (
       <div className="itemDescription">

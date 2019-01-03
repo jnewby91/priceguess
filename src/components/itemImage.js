@@ -5,7 +5,6 @@ import "./itemImage.css";
 import {connect} from 'react-redux';
 
  function ItemImage(props) {
-   console.log(props);
   if(props.data.currentProduct.products.length) {
     return ( <div className="itemImage">
     <h3>{props.data.currentProduct.products[0].name}</h3>

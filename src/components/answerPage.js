@@ -12,7 +12,6 @@ export class AnswerPage extends React.Component{
     // componentWillUnmount(){
     // }
     render() {  
-        console.log(this.props.data)
         //Figure out a way to display if user got question correct or incorrect
         let gamepage = '/gamepage'
         if(this.props.data.priceGuess.playerGuesses.length === 10){
