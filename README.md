@@ -10,9 +10,9 @@ GameBoard Page
 
 Answer Page
 ![Answer Page](screenshots/AnswerPage.PNG)
-
+<!-- 
 FeedBack Page
-![FeedBack Page](screenshots/FeedBackPage.PNG)
+![FeedBack Page](screenshots/FeedBackPage.PNG) -->
 
 ## Live App
 [PriceGuess]
