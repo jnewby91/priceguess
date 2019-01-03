@@ -9,19 +9,15 @@ function shuffleArray(array){
   // I'll work on this later
   
   function buttonValues(price){
-    console.log(Math.round(price));
     let values = [price]; 
     
     //Push 3 Values to the Values array 
     for( let i=0; i <3; i++) {
       values.push(Math.round(price * (Math.floor(Math.random() * 3) + 2)) -.01) 
     }
-     console.log('Values before shuffled:', values)
     
     shuffleArray(values)
-    
-    console.log('Values after shuffled:', values)
-  
+      
     return values; 
   }
   

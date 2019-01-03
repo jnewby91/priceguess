@@ -39,10 +39,9 @@ const renderer =({seconds, completed}) => {
      let name= this.props.data.bestBuyCall.currentProduct.products[0].name; 
      let itemPrice= this.props.data.bestBuyCall.currentProduct.products[0].regularPrice; 
 
-     console.log(value, productURL,name,itemPrice)
     return (
         <div className="scoreboard">
-            {/* <h4 className="timer"> 
+            <h4 className="timer"> 
                 Timer: <span className="numberEmphasis"> 
                 <Countdown date={Date.now() + 8000}
                 onComplete={()=> {
@@ -51,7 +50,7 @@ const renderer =({seconds, completed}) => {
                 }}
                 /> seconds 
             </span>    
-            </h4> */}
+            </h4>
             <h4 className="score">Score:<span className="numberEmphasis"> {this.props.data.priceGuess.score} points</span></h4>
             <h4 className="question">Questions: 
                 <span className="numberEmphasis"> {this.props.data.priceGuess.questions} /10

@@ -10,6 +10,7 @@ import  GamePage from './components/gameboard';
 import AnswerPage from './components/answerPage';
 import Feedback from './components/feedback';
 import FeaturedItems from './components/featuredItems';
+import Instructions from './components/instructions';
 
 ReactDOM.render(
 <Router>
@@ -20,6 +21,7 @@ ReactDOM.render(
             <Route path='/answerpage'component={AnswerPage}/>
             <Route path='/feedback'component={Feedback}/>
             <Route path='/featureditems'component={FeaturedItems}/>
+            <Route path='/instructions'component={Instructions}/>
         </Provider>
 
     </div>

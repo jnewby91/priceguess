@@ -14,7 +14,6 @@ describe('bestBuyCallReducer', () => {
 
 
     it('Should set the initial state when nothing is passed in', () => {
-        console.log(bestBuyCallReducer, typeof bestBuyCallReducer); 
         
         const state = bestBuyCallReducer(undefined, {type: '_UNKNOWN'}); 
         expect(state).toEqual({
