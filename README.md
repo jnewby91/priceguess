@@ -12,7 +12,7 @@ Answer Page
 ![Answer Page](screenshots/AnswerPage.PNG)
 
 FeedBack Page
-![FeedBack Page](screenshots/FeedBack Page.PNG)
+![FeedBack Page](screenshots/FeedBackPage.PNG)
 
 
 
