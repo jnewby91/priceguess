@@ -4,7 +4,7 @@ import {
 } from 'path';
 
 const initialState = {
-    score: 100,
+    score: 0,
     questions: 1,
     loading: false,
     error: null,
@@ -28,7 +28,7 @@ export const priceGuessReducer = (state = initialState, action) => {
         
        if(state.playerGuesses[state.playerGuesses.length -1].correct){
         return Object.assign({}, state, {
-            score: state.score + action.score    
+            score: action.score    
         }) 
        }
 
