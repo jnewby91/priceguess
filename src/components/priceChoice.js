@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'; 
 import './priceChoice.css' ;
 import {connect} from 'react-redux'; 
-import { addScore, changeQuestion, chosenAnswer } from '../actions';
+import {chosenAnswer} from '../actions';
 import priceShuffle from '../utilities/priceShuffle'; 
 
 function PriceChoice(props){

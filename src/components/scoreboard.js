@@ -7,15 +7,7 @@ import {Redirect} from 'react-router-dom';
 import {connect} from 'react-redux'; 
 
 
-const TimesUp = () =>  <p>You Ran Out of Time!</p>; 
-const renderer =({seconds, completed}) => {
-    if(completed){
-      return <TimesUp />
-    }
-    else{
-        return {seconds}
-    }
-};
+
 
  class  Scoreboard extends React.Component{
      constructor(props){

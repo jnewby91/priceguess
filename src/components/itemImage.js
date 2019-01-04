@@ -14,8 +14,7 @@ import {connect} from 'react-redux';
   }
    else {
      return (<p> No Data Found </p>)
-   }
-  ;
+   };
 }
 ItemImage.defaultprops= {
   itemName: "Item Name",

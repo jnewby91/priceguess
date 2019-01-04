@@ -7,7 +7,6 @@ import Scoreboard from './scoreboard';
 import PriceChoice from './priceChoice';
 import Spinner from 'react-spinkit'; 
 import { fetchItemInfo } from '../actions/bestBuyAction';
-import { fetchItemInfoRequest, fetchItemInfoSuccess } from '../actions/bestBuyAction';
 
 
 export class GamePage extends React.Component {

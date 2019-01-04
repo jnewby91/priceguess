@@ -19,7 +19,7 @@ class App extends Component {
       You're presented with 4 choices of prices for a BestBuy product. 
       
       Choose the correct answer before the timer ends. </span> </p>
-      <Link to='/gamepage'><a><span className='startGame'>Start Guessing!</span></a></Link>
+      <Link to='/gamepage'><span className='startGame'>Start Guessing!</span></Link>
       
     </main>
     </div>

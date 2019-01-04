@@ -1,7 +1,4 @@
 import * as actions from '../actions/index';
-import {
-    join
-} from 'path';
 
 const initialState = {
     score: 0,

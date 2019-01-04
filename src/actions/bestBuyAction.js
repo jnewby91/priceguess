@@ -1,5 +1,4 @@
-import {API_BASE_URL} from '../config';
-const apiKey = process.env.REACT_APP_API_KEY; 
+
 
 export const FETCH_ITEM_INFO_REQUEST = 'FETCH_ITEM_INFO_REQUEST';
 export const fetchItemInfoRequest = () => ({
